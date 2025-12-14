@@ -8,6 +8,9 @@ export default function Requested() {
         <p className="mt-3 text-zinc-700">
           Thanks — we’ll review your request and follow up with confirmation and next steps.
         </p>
+        <p className="mt-3 text-zinc-700">
+          This is a request to rent — not a confirmed booking yet.
+        </p>
 
         <div className="mt-8 flex gap-3">
           <Link
