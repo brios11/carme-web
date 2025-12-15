@@ -35,7 +35,7 @@ export default function Home() {
             </div>
 
             <p className="mt-6 text-sm text-zinc-500">
-              CarMe v1 is single-host while we validate demand.
+              CarMe is currently operating as a single-host pilot while we validate demand.
             </p>
           </div>
 
@@ -51,6 +51,40 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* FAQ */}
+        <section className="mt-24">
+          <h2 className="text-2xl font-semibold">How it works</h2>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            <div className="rounded-3xl border border-zinc-200 p-6">
+              <div className="text-sm text-zinc-500">Step 1</div>
+              <h3 className="mt-2 font-medium">Request the car</h3>
+              <p className="mt-2 text-sm text-zinc-700">
+                Choose your dates and submit a rental request. This helps us confirm availability
+                and ensure a good fit.
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-zinc-200 p-6">
+              <div className="text-sm text-zinc-500">Step 2</div>
+              <h3 className="mt-2 font-medium">Confirm details</h3>
+              <p className="mt-2 text-sm text-zinc-700">
+                We’ll follow up to confirm eligibility, pickup details, and next steps.
+                This is a direct, host-operated rental.
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-zinc-200 p-6">
+              <div className="text-sm text-zinc-500">Step 3</div>
+              <h3 className="mt-2 font-medium">Pick up & drive</h3>
+              <p className="mt-2 text-sm text-zinc-700">
+                Once confirmed, complete the agreement and enjoy the car.
+                Simple, transparent, and no marketplace games.
+              </p>
+            </div>
+          </div>
+        </section>
+
       </div>
     </main>
   );

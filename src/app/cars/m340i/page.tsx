@@ -18,6 +18,9 @@ export default function M340iPage() {
         <p className="mt-2 text-zinc-700">
           ${CARME.vehicle.dailyRateUsd}/day • Direct rental
         </p>
+        <p className="mt-2 text-sm text-zinc-500">
+          Single-host pilot • Request-based availability
+        </p>
 
         <section className="mt-10 grid gap-8 md:grid-cols-2">
           <div className="rounded-3xl border border-zinc-200 p-6 shadow-sm">
