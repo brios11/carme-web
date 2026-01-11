@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { CARME } from "@/lib/carme";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-zinc-900">
       <div className="mx-auto max-w-5xl px-6 py-14">
-        <header className="flex items-center justify-between">
-          <div className="font-semibold text-xl">{CARME.brand}</div>
-          <div className="text-sm text-zinc-600">Hosted by {CARME.legal}</div>
-        </header>
+        <Header />
 
         <section className="mt-14 grid gap-10 md:grid-cols-2 md:items-center">
           <div>
@@ -84,7 +84,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+        <Footer />
       </div>
     </main>
   );

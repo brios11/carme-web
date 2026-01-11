@@ -68,7 +68,16 @@ export default function M340iPage() {
                   required
                   className="w-full rounded-2xl border border-zinc-200 px-4 py-3"
                 />
+                <label className="flex items-start gap-3 text-sm text-zinc-700">
+                  <input name="delivery" type="checkbox" />
+                  <span>
+                    Add NYC delivery (+$100). Pickup is Manhattan by default.
+                  </span>
+                </label>
+
               </div>
+
+
 
               <label className="flex gap-3 text-sm text-zinc-700">
                 <input name="agree" type="checkbox" required />
@@ -76,6 +85,23 @@ export default function M340iPage() {
                   I agree to the <Link href="/terms" className="underline">terms</Link>.
                 </span>
               </label>
+              <div className="rounded-2xl bg-zinc-50 p-4 text-sm text-zinc-700 space-y-1">
+                <div className="flex items-center justify-between">
+                  <span>Daily rate</span>
+                  <span className="font-medium">${CARME.vehicle.dailyRateUsd}/day</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Security deposit</span>
+                  <span className="font-medium">$0 (v1)</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Delivery (optional)</span>
+                  <span className="font-medium">$100 (any NYC borough)</span>
+                </div>
+                <div className="pt-2 text-xs text-zinc-500">
+                  Pickup is Manhattan by default. Delivery must be arranged after booking.
+                </div>
+              </div>
 
               <button
                 type="submit"
