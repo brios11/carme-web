@@ -13,7 +13,7 @@ export async function POST(req: Request) {
     startDate: String(form.get("startDate") || ""),
     endDate: String(form.get("endDate") || ""),
     delivery: form.get("delivery") === "on",
-    status: "pending",
+    status: "pending" as const,
     createdAt: new Date().toISOString(),
   };
 
