@@ -41,7 +41,7 @@ export default function M340iPage() {
           <div className="rounded-3xl border border-zinc-200 p-6 shadow-sm">
             <h2 className="text-xl font-semibold">Request to rent</h2>
 
-            <form action="/api/request" method="POST" className="mt-6 space-y-4">
+            <form action="/api/checkout" method="POST" className="mt-6 space-y-4">
               <input
                 name="name"
                 required

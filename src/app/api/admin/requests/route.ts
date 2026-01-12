@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getRequests } from "@/lib/requestStore";
+import { getRequests } from "@/lib/requestsStore";
 
 function unauthorized() {
   return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
